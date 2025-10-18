@@ -6,7 +6,6 @@ export default function LandingPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  // Fungsi scroll ke kontak
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact");
     if (contactSection) {
@@ -78,6 +77,7 @@ export default function LandingPage() {
               desc: "Cocok untuk indoor maupun outdoor, tetap kuat meski terkena air atau panas.",
               img: "/images/tahan-lama.png",
             },
+            
           ].map((item, i) => (
             <div
               key={i}
@@ -96,28 +96,77 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Detail Produk */}
+      <section className="py-20 px-6 bg-gray-50 text-left md:text-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-semibold mb-6 text-center">Informasi Lengkap Produk</h2>
+          <p className="text-gray-700 mb-6 leading-relaxed">
+            Lem ini mempunyai daya rekat sangat kuat yang dapat digunakan untuk pemasangan kayu panel, partisi lantai,
+            peralatan kamar mandi, metal, bata, keramik, MDF, karpet, pajangan, dan pernak-pernik gantungan pada tembok
+            yang biasanya memerlukan paku atau sekrup.
+          </p>
+
+          <h3 className="text-2xl font-semibold mt-8 mb-4">Spesifikasi Produk:</h3>
+          <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
+            <li>100% baru & kualitas tinggi</li>
+            <li>Dapat menopang berat hingga 23kg</li>
+            <li>Tanpa membuat lubang yang akan merusak dinding</li>
+            <li>Mudah digunakan, tidak beracun, tidak ada pelarut, tidak ada polusi, tidak ada korosi, dan tahan lama</li>
+          </ul>
+
+          <h3 className="text-2xl font-semibold mt-8 mb-4">Keunggulan:</h3>
+          <ul className="list-none text-gray-700 leading-relaxed space-y-2">
+            <li>👍 Daya rekat tinggi kuat</li>
+            <li>👍 Dapat digunakan untuk material berpori maupun tidak berpori</li>
+            <li>👍 Tahan terhadap panas dan air setelah lem kering</li>
+            <li>👍 Aman digunakan, tidak berbau, ramah lingkungan, dan mudah dibersihkan dengan air</li>
+            <li>👍 Dapat diaplikasikan pada: Kayu, Plastik, Bata, Metal, Keramik, Batu, dan Plaster</li>
+          </ul>
+
+          <h3 className="text-2xl font-semibold mt-8 mb-4">Saran Pemakaian:</h3>
+          <ul className="list-none text-gray-700 leading-relaxed space-y-2">
+            <li>✅ Bersihkan area yang akan direkatkan</li>
+            <li>✅ Oleskan secara merata, jangan terlalu banyak atau terlalu sedikit</li>
+            <li>✅ Jangan diberikan beban dalam jangka waktu 3 jam</li>
+            <li>✅ Untuk kekuatan maksimal, biarkan dalam jangka waktu 24 jam</li>
+          </ul>
+        </div>
+      </section>
+
       {/* Testimoni */}
-      <section id="testimoni" className="py-20 px-6 bg-gray-50 text-center">
+      <section id="testimoni" className="py-20 px-6 bg-white text-center">
         <h2 className="text-3xl font-semibold mb-12">Cerita dari Pengguna Kami</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {[
             {
-              name: "Dedi, Bandung",
-              text: "Awalnya ragu, tapi ternyata kuat banget! Rak dapur nempel tanpa paku sampai sekarang.",
+              name: "b*****k",
+              text: "Lem kualitas produksi baik pengiriman cepat sampai tujuan.",
             },
             {
-              name: "Rina, Tangerang",
-              text: "Suka banget! Pasang dekorasi kamar jadi rapi tanpa takut cat dinding rusak.",
+              name: "s************o",
+              text: "barang telah sampai dengan selamat, packing rapih pengiriman lumayan cepat, mudah mudahan berfungsi dengan baik supaya kedepan bisa jadi langganan, makasih seller, .",
             },
             {
-              name: "Arif, Surabaya",
-              text: "Dipakai di kamar mandi juga tetap nempel kuat meski sering kena air. Mantap!",
+              name: "p***********6",
+              text: "Barang bagus,Tapi belum dicoba. Mudah²an sesuai dengan iklan., pengiriman cepat, harga bersahabat, pokoknya recomended banget lah beli disini.",
+            },
+            {
+              name: "m**********f",
+              text: "Thankyou Bosku. Paket aku udah masuk dengan selamat. Semuanya lengkap tidak ada yang kurang. Nex order lagi di toko ini.",
+            },
+            {
+              name: "s*****y",
+              text: "sesuai pesanan, jumlah sesuai, lem pengganti paku, makasih.",
+            },
+            {
+              name: "m********a",
+              text: "Kondisi baik, sesuai dengan gambar dan deskripsi",
             },
           ].map((t, i) => (
-            <div key={i} className="shadow-md bg-white rounded-xl p-6">
+            <div key={i} className="shadow-md bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
               <p className="italic text-gray-600 mb-4">“{t.text}”</p>
               <h4 className="font-semibold">{t.name}</h4>
-              <p className="text-sm text-gray-500">Pelanggan Puas</p>
+              <p className="text-sm text-gray-500">⭐️⭐️⭐️⭐️⭐️</p>
             </div>
           ))}
         </div>
@@ -154,72 +203,72 @@ export default function LandingPage() {
           Pesan Sekarang
         </motion.button>
       </section>
-{/* Form Pemesanan */}
-<section id="contact" className="py-20 px-6 bg-gray-50 text-center">
-  <h2 className="text-3xl font-semibold mb-6">Pesan Sekarang LemTembokPro!</h2>
-  <p className="text-gray-600 mb-8">
-    Isi formulir di bawah ini untuk melakukan pemesanan. Tim kami akan segera menghubungi Anda untuk konfirmasi dan pengiriman produk.
-  </p>
 
-  <form
-    className="max-w-lg mx-auto grid gap-4 text-left"
-    onSubmit={(e) => {
-      e.preventDefault();
-      const name = e.target[0].value;
-      const phone = e.target[1].value;
-      const address = e.target[2].value;
+      {/* Form Pemesanan */}
+      <section id="contact" className="py-20 px-6 bg-gray-50 text-center">
+        <h2 className="text-3xl font-semibold mb-6">Pesan Sekarang Lem Tembok!</h2>
+        <p className="text-gray-600 mb-8">
+          Isi formulir di bawah ini untuk melakukan pemesanan. Tim kami akan segera menghubungi Anda untuk konfirmasi dan pengiriman produk.
+        </p>
 
-      // Format pesan otomatis ke WhatsApp
-      const message =
-        `Halo, saya ingin memesan produk *Lem Tembok*.\n\n` +
-        `Berikut data saya:\n` +
-        ` Nama: ${name}\n` +
-        ` Nomor WA: ${phone}\n` +
-        ` Alamat: ${address}\n\n` +
-        `Mohon konfirmasi ketersediaan produk, ya!`;
+        <form
+          className="max-w-lg mx-auto grid gap-4 text-left"
+          onSubmit={(e) => {
+            e.preventDefault();
+            const name = e.target[0].value;
+            const phone = e.target[1].value;
+            const address = e.target[2].value;
 
-      const url = `https://wa.me/6285900405885?text=${encodeURIComponent(message)}`;
-      window.open(url, "_blank");
-    }}
-  >
-    <input
-      type="text"
-      placeholder="Nama Penerima"
-      className="border rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
-      required
-    />
+            const message =
+              `Halo, saya ingin memesan produk *Lem Tembok*.\n\n` +
+              `Berikut data saya:\n` +
+              ` Nama: ${name}\n` +
+              ` Nomor WA: ${phone}\n` +
+              ` Alamat: ${address}\n\n` +
+              `Mohon konfirmasi ketersediaan produk, ya!`;
 
-    <input
-      type="text"
-      placeholder="Nomor Telepon/Whatsapp"
-      className="border rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
-      required
-    />
+            const url = `https://wa.me/6285900405885?text=${encodeURIComponent(message)}`;
+            window.open(url, "_blank");
+          }}
+        >
+          <input
+            type="text"
+            placeholder="Nama Penerima"
+            className="border rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required
+          />
 
-    <textarea
-      placeholder="Alamat Penerima"
-      rows={3}
-      className="border rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
-      required
-    ></textarea>
+          <input
+            type="text"
+            placeholder="Nomor Telepon/Whatsapp"
+            className="border rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required
+          />
 
-    <button
-      type="submit"
-      className="bg-blue-600 text-white w-full py-3 text-lg rounded-full shadow-md 
-                 font-semibold transition-all duration-300
-                 hover:bg-green-500 hover:text-white hover:-translate-y-2 
-                 hover:shadow-2xl hover:scale-105"
-    >
-      Pesan Sekarang
-    </button>
-  </form>
-</section>
+          <textarea
+            placeholder="Alamat Penerima"
+            rows={3}
+            className="border rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+            required
+          ></textarea>
 
-
+          <button
+            type="submit"
+            className="bg-blue-600 text-white w-full py-3 text-lg rounded-full shadow-md 
+                      font-semibold transition-all duration-300
+                      hover:bg-green-500 hover:text-white hover:-translate-y-2 
+                      hover:shadow-2xl hover:scale-105"
+          >
+            Pesan Sekarang
+          </button>
+        </form>
+      </section>
 
       {/* Footer */}
       <footer className="py-6 bg-gray-800 text-gray-300 text-center">
-        <p>© {new Date().getFullYear()} Lem Tembok. All rights reserved. Built with ❤️ for Indonesian developers.</p>
+        <p>
+          © {new Date().getFullYear()} Lem Tembok. All rights reserved. Built with ❤️ for Indonesian developers.
+        </p>
       </footer>
     </div>
   );
