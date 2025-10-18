@@ -96,43 +96,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Detail Produk */}
-      <section className="py-20 px-6 bg-gray-50 text-left md:text-center">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-semibold mb-6 text-center">Informasi Lengkap Produk</h2>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            Lem ini mempunyai daya rekat sangat kuat yang dapat digunakan untuk pemasangan kayu panel, partisi lantai,
-            peralatan kamar mandi, metal, bata, keramik, MDF, karpet, pajangan, dan pernak-pernik gantungan pada tembok
-            yang biasanya memerlukan paku atau sekrup.
-          </p>
-
-          <h3 className="text-2xl font-semibold mt-8 mb-4">Spesifikasi Produk:</h3>
-          <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
-            <li>100% baru & kualitas tinggi</li>
-            <li>Dapat menopang berat hingga 23kg</li>
-            <li>Tanpa membuat lubang yang akan merusak dinding</li>
-            <li>Mudah digunakan, tidak beracun, tidak ada pelarut, tidak ada polusi, tidak ada korosi, dan tahan lama</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold mt-8 mb-4">Keunggulan:</h3>
-          <ul className="list-none text-gray-700 leading-relaxed space-y-2">
-            <li>👍 Daya rekat tinggi kuat</li>
-            <li>👍 Dapat digunakan untuk material berpori maupun tidak berpori</li>
-            <li>👍 Tahan terhadap panas dan air setelah lem kering</li>
-            <li>👍 Aman digunakan, tidak berbau, ramah lingkungan, dan mudah dibersihkan dengan air</li>
-            <li>👍 Dapat diaplikasikan pada: Kayu, Plastik, Bata, Metal, Keramik, Batu, dan Plaster</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold mt-8 mb-4">Saran Pemakaian:</h3>
-          <ul className="list-none text-gray-700 leading-relaxed space-y-2">
-            <li>✅ Bersihkan area yang akan direkatkan</li>
-            <li>✅ Oleskan secara merata, jangan terlalu banyak atau terlalu sedikit</li>
-            <li>✅ Jangan diberikan beban dalam jangka waktu 3 jam</li>
-            <li>✅ Untuk kekuatan maksimal, biarkan dalam jangka waktu 24 jam</li>
-          </ul>
-        </div>
-      </section>
-
       {/* Testimoni */}
       <section id="testimoni" className="py-20 px-6 bg-white text-center">
         <h2 className="text-3xl font-semibold mb-12">Cerita dari Pengguna Kami</h2>
