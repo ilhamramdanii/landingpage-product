@@ -219,7 +219,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="py-6 bg-gray-800 text-gray-300 text-center">
-        <p>© {new Date().getFullYear()} Lem Tembok. Semua Hak Dilindungi.</p>
+        <p>© {new Date().getFullYear()} Lem Tembok. All rights reserved. Built with ❤️ for Indonesian developers.</p>
       </footer>
     </div>
   );
