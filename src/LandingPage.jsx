@@ -135,37 +135,63 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-blue-600 text-center text-white px-6">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-4xl font-bold mb-6"
-        >
-          Siap Pasang Tanpa Paku?  
-        </motion.h2>
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-lg mb-8 max-w-2xl mx-auto"
-        >
-          Gunakan <span className="font-semibold">LemTembokPro</span> — solusi cepat, kuat, dan rapi untuk semua kebutuhan menempel Anda!
-        </motion.p>
-        <motion.button
-          onClick={scrollToContact}
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.5 }}
-          className="bg-white text-blue-700 font-semibold text-lg px-10 py-4 rounded-full shadow-lg 
-               transition-all duration-300 
-               hover:bg-green-500 hover:text-white hover:-translate-y-2 
-               hover:shadow-2xl hover:scale-105"
-        >
-          Pesan Sekarang
-        </motion.button>
-      </section>
+{/* CTA Section */}
+<section className="py-24 bg-blue-600 text-center text-white px-6">
+  <motion.h2
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    className="text-4xl font-bold mb-4"
+  >
+    Siap Pasang Tanpa Paku?
+  </motion.h2>
+
+  <motion.p
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1 }}
+    className="text-lg mb-8 max-w-2xl mx-auto"
+  >
+    Gunakan <span className="font-semibold">LemTembokPro</span> — solusi cepat, kuat, dan rapi untuk semua kebutuhan menempel Anda!
+  </motion.p>
+
+  {/* Harga Promo */}
+  <motion.div
+    initial={{ opacity: 0, scale: 0.9 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.8 }}
+    className="flex flex-col items-center mb-10"
+  >
+    <div className="relative bg-white/10 backdrop-blur-sm px-6 py-5 rounded-2xl shadow-lg inline-block">
+      <span className="absolute -top-3 -right-3 bg-red-500 text-white text-sm font-semibold px-3 py-1 rounded-full">
+        💥 Diskon 30%
+      </span>
+      <div className="text-gray-200 text-lg line-through">Rp70.000</div>
+      <motion.div
+        animate={{ scale: [1, 1.1, 1] }}
+        transition={{ duration: 1.5, repeat: Infinity }}
+        className="text-4xl font-extrabold text-yellow-300 mt-1"
+      >
+        Rp49.000
+      </motion.div>
+      <p className="text-sm mt-1 text-gray-200 italic">*Harga promo terbatas</p>
+    </div>
+  </motion.div>
+
+  <motion.button
+    onClick={scrollToContact}
+    initial={{ opacity: 0, scale: 0.9 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ delay: 0.5 }}
+    className="bg-white text-blue-700 font-semibold text-lg px-10 py-4 rounded-full shadow-lg 
+         transition-all duration-300 
+         hover:bg-green-500 hover:text-white hover:-translate-y-2 
+         hover:shadow-2xl hover:scale-105"
+  >
+    Pesan Sekarang
+  </motion.button>
+</section>
+
 
       {/* Form Pemesanan */}
       <section id="contact" className="py-20 px-6 bg-gray-50 text-center">
