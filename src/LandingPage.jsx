@@ -70,12 +70,12 @@ export default function LandingPage() {
             {
               title: "Tanpa Merusak Dinding",
               desc: "Tidak meninggalkan bekas, tidak merontokkan cat, dan mudah dibersihkan.",
-              img: "/images/tanpa-merusak-dinding.png",
+              img: "/images/tahan-lama.png",
             },
             {
               title: "Tahan Lama & Tahan Air",
               desc: "Cocok untuk indoor maupun outdoor, tetap kuat meski terkena air atau panas.",
-              img: "/images/tahan-lama.png",
+              img: "/images/tanpa-merusak-dinding.png",
             },
             
           ].map((item, i) => (
@@ -256,7 +256,7 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="py-6 bg-gray-800 text-gray-300 text-center">
         <p>
-          © {new Date().getFullYear()} Lem Tembok. All rights reserved. Built with ❤️ for Indonesian developers.
+          © {new Date().getFullYear()} Lem Tembok. All rights reserved. Built with ❤️.
         </p>
       </footer>
     </div>
